@@ -1,0 +1,13 @@
+name: Trigger Template Sync
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger_sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: No-op step to trigger workflows in target repos
+        run: echo "Triggering template sync in downstream repositories..."
